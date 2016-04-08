@@ -28,6 +28,8 @@ TARGET_2ND_CPU_VARIANT := cortex-a7
 
 ENABLE_CPUSETS := true
 
+ART_USE_OPTIMIZING_COMPILER := true
+
 TARGET_NO_BOOTLOADER := true
 
 # Inline kernel
