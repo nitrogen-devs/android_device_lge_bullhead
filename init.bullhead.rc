@@ -470,3 +470,11 @@ service fingerprintd /system/bin/fingerprintd
     user system
     group system input
 
+service qcom-post-boot /system/bin/sh /system/bin/init.qcom.post_boot.sh
+    class late_start
+    user root
+    disabled
+    oneshot
+
+on property:sys.boot_completed=1
+    start qcom-post-boot

@@ -30,6 +30,8 @@
 #    $(LOCAL_KERNEL):kernel
 
 PRODUCT_COPY_FILES += \
+    device/lge/bullhead/configs/init.qcom.post_boot.sh:system/bin/init.qcom.post_boot.sh \
+    device/lge/bullhead/configs/96-postboot.sh:system/addon.d/96-postboot.sh \
     device/lge/bullhead/init.bullhead.rc:root/init.bullhead.rc \
     device/lge/bullhead/init.bullhead.usb.rc:root/init.bullhead.usb.rc \
     device/lge/bullhead/fstab.bullhead:root/fstab.bullhead \
