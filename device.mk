@@ -306,10 +306,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
 
-# Skip HDCP
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.wfd.nohdcp=1
-
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.default_cdma_sub=0 \
     persist.qcril.disable_retry=true
